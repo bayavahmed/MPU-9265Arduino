@@ -480,7 +480,7 @@ void setup()
 
   delay(1000);
 
-  if (c == 0x73) // WHO_AM_I should always be 0x68
+  if (c == 0x71) // WHO_AM_I should always be 0x68
   {
     Serial.println("MPU9250 is online...");
 
@@ -1152,4 +1152,3 @@ void readBytes(uint8_t address, uint8_t subAddress, uint8_t count, uint8_t * des
     dest[i++] = Wire.read();
   }         // Put read results in the Rx buffer
 }
-
